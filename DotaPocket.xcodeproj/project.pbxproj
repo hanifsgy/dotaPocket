@@ -1,0 +1,625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52389BB424A31D240007A75F /* CardNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52389BB324A31D240007A75F /* CardNode.swift */; };
+		52DC8F0A24A3050E006E9B6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DC8F0924A3050E006E9B6B /* AppDelegate.swift */; };
+		52DC8F0C24A3050E006E9B6B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DC8F0B24A3050E006E9B6B /* SceneDelegate.swift */; };
+		52DC8F1324A30511006E9B6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52DC8F1224A30511006E9B6B /* Assets.xcassets */; };
+		52DC8F1624A30511006E9B6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52DC8F1424A30511006E9B6B /* LaunchScreen.storyboard */; };
+		52DC8F2124A30512006E9B6B /* DotaPocketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DC8F2024A30512006E9B6B /* DotaPocketTests.swift */; };
+		52DC8F4224A31CA6006E9B6B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DC8F4124A31CA6006E9B6B /* NetworkError.swift */; };
+		59712EAE460AFA3F52B4F916 /* Pods_DotaPocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 879E230CD0C829F36B3FFC31 /* Pods_DotaPocket.framework */; };
+		EBAF363AB1A4865F4BC1BAF3 /* Pods_DotaPocketTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80EAD5D5C437249EF8904A36 /* Pods_DotaPocketTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52DC8F1D24A30512006E9B6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52DC8EFE24A3050E006E9B6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52DC8F0524A3050E006E9B6B;
+			remoteInfo = DotaPocket;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		52389BB324A31D240007A75F /* CardNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardNode.swift; sourceTree = "<group>"; };
+		52DC8F0624A3050E006E9B6B /* DotaPocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DotaPocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52DC8F0924A3050E006E9B6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52DC8F0B24A3050E006E9B6B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		52DC8F1224A30511006E9B6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52DC8F1524A30511006E9B6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52DC8F1724A30511006E9B6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52DC8F1C24A30512006E9B6B /* DotaPocketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DotaPocketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52DC8F2024A30512006E9B6B /* DotaPocketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotaPocketTests.swift; sourceTree = "<group>"; };
+		52DC8F2224A30512006E9B6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52DC8F4124A31CA6006E9B6B /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		80EAD5D5C437249EF8904A36 /* Pods_DotaPocketTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DotaPocketTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		879E230CD0C829F36B3FFC31 /* Pods_DotaPocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DotaPocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3003B6F76B3F2D533FC0D67 /* Pods-DotaPocketTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DotaPocketTests.release.xcconfig"; path = "Target Support Files/Pods-DotaPocketTests/Pods-DotaPocketTests.release.xcconfig"; sourceTree = "<group>"; };
+		D6B7DFBC89628A2CD8802653 /* Pods-DotaPocketTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DotaPocketTests.debug.xcconfig"; path = "Target Support Files/Pods-DotaPocketTests/Pods-DotaPocketTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EE1DE212F42C10F48EED7420 /* Pods-DotaPocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DotaPocket.debug.xcconfig"; path = "Target Support Files/Pods-DotaPocket/Pods-DotaPocket.debug.xcconfig"; sourceTree = "<group>"; };
+		FAF9999D8F5C124A4D8A1183 /* Pods-DotaPocket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DotaPocket.release.xcconfig"; path = "Target Support Files/Pods-DotaPocket/Pods-DotaPocket.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52DC8F0324A3050E006E9B6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59712EAE460AFA3F52B4F916 /* Pods_DotaPocket.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52DC8F1924A30512006E9B6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBAF363AB1A4865F4BC1BAF3 /* Pods_DotaPocketTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10F4339146956FA83D31CD6A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE1DE212F42C10F48EED7420 /* Pods-DotaPocket.debug.xcconfig */,
+				FAF9999D8F5C124A4D8A1183 /* Pods-DotaPocket.release.xcconfig */,
+				D6B7DFBC89628A2CD8802653 /* Pods-DotaPocketTests.debug.xcconfig */,
+				C3003B6F76B3F2D533FC0D67 /* Pods-DotaPocketTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		52389BB124A31CD90007A75F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				52DC8F0924A3050E006E9B6B /* AppDelegate.swift */,
+				52DC8F0B24A3050E006E9B6B /* SceneDelegate.swift */,
+				52DC8F1724A30511006E9B6B /* Info.plist */,
+				52DC8F1424A30511006E9B6B /* LaunchScreen.storyboard */,
+				52DC8F1224A30511006E9B6B /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		52389BB224A31D080007A75F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				52389BB324A31D240007A75F /* CardNode.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		52DC8EFD24A3050E006E9B6B = {
+			isa = PBXGroup;
+			children = (
+				52DC8F0824A3050E006E9B6B /* DotaPocket */,
+				52DC8F1F24A30512006E9B6B /* DotaPocketTests */,
+				52DC8F0724A3050E006E9B6B /* Products */,
+				10F4339146956FA83D31CD6A /* Pods */,
+				6409AE763A0F15EB4EE152D1 /* Frameworks */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+		};
+		52DC8F0724A3050E006E9B6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52DC8F0624A3050E006E9B6B /* DotaPocket.app */,
+				52DC8F1C24A30512006E9B6B /* DotaPocketTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52DC8F0824A3050E006E9B6B /* DotaPocket */ = {
+			isa = PBXGroup;
+			children = (
+				52389BB124A31CD90007A75F /* Resources */,
+				52DC8F3F24A31C87006E9B6B /* Networking */,
+				52DC8F2C24A30526006E9B6B /* Modules */,
+				52DC8F2B24A30520006E9B6B /* Common */,
+			);
+			path = DotaPocket;
+			sourceTree = "<group>";
+		};
+		52DC8F1F24A30512006E9B6B /* DotaPocketTests */ = {
+			isa = PBXGroup;
+			children = (
+				52DC8F2024A30512006E9B6B /* DotaPocketTests.swift */,
+				52DC8F2224A30512006E9B6B /* Info.plist */,
+			);
+			path = DotaPocketTests;
+			sourceTree = "<group>";
+		};
+		52DC8F2B24A30520006E9B6B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				52389BB224A31D080007A75F /* UI */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		52DC8F2C24A30526006E9B6B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		52DC8F3F24A31C87006E9B6B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				52DC8F4124A31CA6006E9B6B /* NetworkError.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		6409AE763A0F15EB4EE152D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				879E230CD0C829F36B3FFC31 /* Pods_DotaPocket.framework */,
+				80EAD5D5C437249EF8904A36 /* Pods_DotaPocketTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52DC8F0524A3050E006E9B6B /* DotaPocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52DC8F2524A30512006E9B6B /* Build configuration list for PBXNativeTarget "DotaPocket" */;
+			buildPhases = (
+				4B9551C433FCD976A0946351 /* [CP] Check Pods Manifest.lock */,
+				52DC8F0224A3050E006E9B6B /* Sources */,
+				52DC8F0324A3050E006E9B6B /* Frameworks */,
+				52DC8F0424A3050E006E9B6B /* Resources */,
+				945BB3AD91ADBCC117375EB3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DotaPocket;
+			productName = DotaPocket;
+			productReference = 52DC8F0624A3050E006E9B6B /* DotaPocket.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52DC8F1B24A30512006E9B6B /* DotaPocketTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52DC8F2824A30512006E9B6B /* Build configuration list for PBXNativeTarget "DotaPocketTests" */;
+			buildPhases = (
+				E174D0F6C895ADD6FE757477 /* [CP] Check Pods Manifest.lock */,
+				52DC8F1824A30512006E9B6B /* Sources */,
+				52DC8F1924A30512006E9B6B /* Frameworks */,
+				52DC8F1A24A30512006E9B6B /* Resources */,
+				DAC33A8CA3D49CD28ACF4358 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52DC8F1E24A30512006E9B6B /* PBXTargetDependency */,
+			);
+			name = DotaPocketTests;
+			productName = DotaPocketTests;
+			productReference = 52DC8F1C24A30512006E9B6B /* DotaPocketTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52DC8EFE24A3050E006E9B6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "M Hanif Sugiyanto";
+				TargetAttributes = {
+					52DC8F0524A3050E006E9B6B = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					52DC8F1B24A30512006E9B6B = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 52DC8F0524A3050E006E9B6B;
+					};
+				};
+			};
+			buildConfigurationList = 52DC8F0124A3050E006E9B6B /* Build configuration list for PBXProject "DotaPocket" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52DC8EFD24A3050E006E9B6B;
+			productRefGroup = 52DC8F0724A3050E006E9B6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52DC8F0524A3050E006E9B6B /* DotaPocket */,
+				52DC8F1B24A30512006E9B6B /* DotaPocketTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52DC8F0424A3050E006E9B6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52DC8F1624A30511006E9B6B /* LaunchScreen.storyboard in Resources */,
+				52DC8F1324A30511006E9B6B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52DC8F1A24A30512006E9B6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B9551C433FCD976A0946351 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DotaPocket-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		945BB3AD91ADBCC117375EB3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DotaPocket/Pods-DotaPocket-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DotaPocket/Pods-DotaPocket-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DotaPocket/Pods-DotaPocket-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAC33A8CA3D49CD28ACF4358 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DotaPocketTests/Pods-DotaPocketTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DotaPocketTests/Pods-DotaPocketTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DotaPocketTests/Pods-DotaPocketTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E174D0F6C895ADD6FE757477 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DotaPocketTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52DC8F0224A3050E006E9B6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52DC8F4224A31CA6006E9B6B /* NetworkError.swift in Sources */,
+				52389BB424A31D240007A75F /* CardNode.swift in Sources */,
+				52DC8F0A24A3050E006E9B6B /* AppDelegate.swift in Sources */,
+				52DC8F0C24A3050E006E9B6B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52DC8F1824A30512006E9B6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52DC8F2124A30512006E9B6B /* DotaPocketTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52DC8F1E24A30512006E9B6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52DC8F0524A3050E006E9B6B /* DotaPocket */;
+			targetProxy = 52DC8F1D24A30512006E9B6B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		52DC8F1424A30511006E9B6B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52DC8F1524A30511006E9B6B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52DC8F2324A30512006E9B6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52DC8F2424A30512006E9B6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52DC8F2624A30512006E9B6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE1DE212F42C10F48EED7420 /* Pods-DotaPocket.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DotaPocket/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DotaPocket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52DC8F2724A30512006E9B6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAF9999D8F5C124A4D8A1183 /* Pods-DotaPocket.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DotaPocket/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DotaPocket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		52DC8F2924A30512006E9B6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6B7DFBC89628A2CD8802653 /* Pods-DotaPocketTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DotaPocketTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DotaPocketTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DotaPocket.app/DotaPocket";
+			};
+			name = Debug;
+		};
+		52DC8F2A24A30512006E9B6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3003B6F76B3F2D533FC0D67 /* Pods-DotaPocketTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DotaPocketTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DotaPocketTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DotaPocket.app/DotaPocket";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52DC8F0124A3050E006E9B6B /* Build configuration list for PBXProject "DotaPocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52DC8F2324A30512006E9B6B /* Debug */,
+				52DC8F2424A30512006E9B6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52DC8F2524A30512006E9B6B /* Build configuration list for PBXNativeTarget "DotaPocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52DC8F2624A30512006E9B6B /* Debug */,
+				52DC8F2724A30512006E9B6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52DC8F2824A30512006E9B6B /* Build configuration list for PBXNativeTarget "DotaPocketTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52DC8F2924A30512006E9B6B /* Debug */,
+				52DC8F2A24A30512006E9B6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52DC8EFE24A3050E006E9B6B /* Project object */;
+}

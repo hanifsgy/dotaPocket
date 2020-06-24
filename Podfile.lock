@@ -1,0 +1,109 @@
+PODS:
+  - Alamofire (5.0.5)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (14.0.0):
+    - Moya/Core
+    - RxSwift (~> 5.0)
+  - Nimble (8.0.7)
+  - PINCache (3.0.1-beta.6):
+    - PINCache/Arc-exception-safe (= 3.0.1-beta.6)
+    - PINCache/Core (= 3.0.1-beta.6)
+  - PINCache/Arc-exception-safe (3.0.1-beta.6):
+    - PINCache/Core
+  - PINCache/Core (3.0.1-beta.6):
+    - PINOperation (~> 1.1.0)
+  - PINOperation (1.1.2)
+  - PINRemoteImage/Core (3.0.0-beta.13):
+    - PINOperation
+  - PINRemoteImage/iOS (3.0.0-beta.13):
+    - PINRemoteImage/Core
+  - PINRemoteImage/PINCache (3.0.0-beta.13):
+    - PINCache (= 3.0.1-beta.6)
+    - PINRemoteImage/Core
+  - Quick (2.2.0)
+  - RxBlocking (5.1.1):
+    - RxSwift (~> 5)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxNimble/Core (4.7.1):
+    - Nimble (~> 8.0)
+    - RxSwift (~> 5.0)
+  - RxNimble/RxBlocking (4.7.1):
+    - RxBlocking
+    - RxNimble/Core
+  - RxNimble/RxTest (4.7.1):
+    - RxNimble/Core
+    - RxTest
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+  - RxTest (5.1.1):
+    - RxSwift (~> 5)
+  - Texture (2.8.1):
+    - Texture/AssetsLibrary (= 2.8.1)
+    - Texture/Core (= 2.8.1)
+    - Texture/MapKit (= 2.8.1)
+    - Texture/Photos (= 2.8.1)
+    - Texture/PINRemoteImage (= 2.8.1)
+    - Texture/Video (= 2.8.1)
+  - Texture/AssetsLibrary (2.8.1):
+    - Texture/Core
+  - Texture/Core (2.8.1)
+  - Texture/MapKit (2.8.1):
+    - Texture/Core
+  - Texture/Photos (2.8.1):
+    - Texture/Core
+  - Texture/PINRemoteImage (2.8.1):
+    - PINRemoteImage/iOS (= 3.0.0-beta.13)
+    - PINRemoteImage/PINCache
+    - Texture/Core
+  - Texture/Video (2.8.1):
+    - Texture/Core
+
+DEPENDENCIES:
+  - Moya/RxSwift
+  - Quick
+  - RxCocoa
+  - RxNimble/RxBlocking
+  - RxNimble/RxTest
+  - RxSwift
+  - Texture
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Moya
+    - Nimble
+    - PINCache
+    - PINOperation
+    - PINRemoteImage
+    - Quick
+    - RxBlocking
+    - RxCocoa
+    - RxNimble
+    - RxRelay
+    - RxSwift
+    - RxTest
+    - Texture
+
+SPEC CHECKSUMS:
+  Alamofire: df2f8f826963b08b9a870791ad48e07a10090b2e
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  Nimble: a73af6ecd4c9106f434f3d55fc54570be3739e0b
+  PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
+  PINOperation: 24b774353ca248fcf87d67b2d61eef42087c125a
+  PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
+  Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
+  RxBlocking: 5f700a78cad61ce253ebd37c9a39b5ccc76477b4
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxNimble: dca9840cfa96ce73847813432ddc6e84e1fcdd61
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  RxTest: 711632d5644dffbeb62c936a521b5b008a1e1faa
+  Texture: 8ecf6984065a1e54f06bf97b349ecca28582acd7
+
+PODFILE CHECKSUM: 60a6b0edea5d3b93e5182269b9a4e171ae25632c
+
+COCOAPODS: 1.9.0
