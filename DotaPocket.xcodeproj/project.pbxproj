@@ -8,6 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		52389BB424A31D240007A75F /* CardNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52389BB324A31D240007A75F /* CardNode.swift */; };
+		52D8D23E24A3AA2100589E24 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8D23D24A3AA2100589E24 /* Color.swift */; };
+		52D8D24024A3AC7100589E24 /* TagNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8D23F24A3AC7100589E24 /* TagNode.swift */; };
+		52D8D24224A3AD0A00589E24 /* NSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8D24124A3AD0A00589E24 /* NSAttributedString.swift */; };
+		52D8D24424A3AF0400589E24 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8D24324A3AF0400589E24 /* NetworkService.swift */; };
+		52D8D24624A3B5E500589E24 /* DotaPocketAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8D24524A3B5E500589E24 /* DotaPocketAPI.swift */; };
+		52D8D24C24A3BB2800589E24 /* DotaPocket.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52D8D24A24A3BB2800589E24 /* DotaPocket.xcdatamodeld */; };
+		52D8D25024A3BCDB00589E24 /* HeroStats+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8D24F24A3BCDB00589E24 /* HeroStats+CoreDataClass.swift */; };
+		52D8DD8824A5B0CB00589E24 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DD8124A5B0CB00589E24 /* MainPresenter.swift */; };
+		52D8DD8924A5B0CB00589E24 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DD8224A5B0CB00589E24 /* MainRouter.swift */; };
+		52D8DD8A24A5B0CB00589E24 /* MainProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DD8324A5B0CB00589E24 /* MainProtocols.swift */; };
+		52D8DD8B24A5B0CB00589E24 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DD8424A5B0CB00589E24 /* MainInteractor.swift */; };
+		52D8DD8C24A5B0CB00589E24 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DD8524A5B0CB00589E24 /* MainView.swift */; };
+		52D8DD8D24A5B0CB00589E24 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DD8624A5B0CB00589E24 /* MainModel.swift */; };
+		52D8DD9024A5C74600589E24 /* UINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DD8F24A5C74600589E24 /* UINavigationBar.swift */; };
 		52DC8F0A24A3050E006E9B6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DC8F0924A3050E006E9B6B /* AppDelegate.swift */; };
 		52DC8F0C24A3050E006E9B6B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DC8F0B24A3050E006E9B6B /* SceneDelegate.swift */; };
 		52DC8F1324A30511006E9B6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52DC8F1224A30511006E9B6B /* Assets.xcassets */; };
@@ -30,6 +44,20 @@
 
 /* Begin PBXFileReference section */
 		52389BB324A31D240007A75F /* CardNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardNode.swift; sourceTree = "<group>"; };
+		52D8D23D24A3AA2100589E24 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		52D8D23F24A3AC7100589E24 /* TagNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagNode.swift; sourceTree = "<group>"; };
+		52D8D24124A3AD0A00589E24 /* NSAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedString.swift; sourceTree = "<group>"; };
+		52D8D24324A3AF0400589E24 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		52D8D24524A3B5E500589E24 /* DotaPocketAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotaPocketAPI.swift; sourceTree = "<group>"; };
+		52D8D24B24A3BB2800589E24 /* DotaPocket.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DotaPocket.xcdatamodel; sourceTree = "<group>"; };
+		52D8D24F24A3BCDB00589E24 /* HeroStats+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HeroStats+CoreDataClass.swift"; sourceTree = "<group>"; };
+		52D8DD8124A5B0CB00589E24 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		52D8DD8224A5B0CB00589E24 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		52D8DD8324A5B0CB00589E24 /* MainProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProtocols.swift; sourceTree = "<group>"; };
+		52D8DD8424A5B0CB00589E24 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		52D8DD8524A5B0CB00589E24 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		52D8DD8624A5B0CB00589E24 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
+		52D8DD8F24A5C74600589E24 /* UINavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBar.swift; sourceTree = "<group>"; };
 		52DC8F0624A3050E006E9B6B /* DotaPocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DotaPocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52DC8F0924A3050E006E9B6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52DC8F0B24A3050E006E9B6B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +115,7 @@
 				52DC8F1724A30511006E9B6B /* Info.plist */,
 				52DC8F1424A30511006E9B6B /* LaunchScreen.storyboard */,
 				52DC8F1224A30511006E9B6B /* Assets.xcassets */,
+				52D8D24A24A3BB2800589E24 /* DotaPocket.xcdatamodeld */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -95,8 +124,40 @@
 			isa = PBXGroup;
 			children = (
 				52389BB324A31D240007A75F /* CardNode.swift */,
+				52D8D23F24A3AC7100589E24 /* TagNode.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		52D8D23C24A3AA1800589E24 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				52D8D23D24A3AA2100589E24 /* Color.swift */,
+				52D8D24124A3AD0A00589E24 /* NSAttributedString.swift */,
+				52D8DD8F24A5C74600589E24 /* UINavigationBar.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		52D8D24724A3B7AD00589E24 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52D8D24F24A3BCDB00589E24 /* HeroStats+CoreDataClass.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52D8DD8024A5B0A500589E24 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				52D8DD8124A5B0CB00589E24 /* MainPresenter.swift */,
+				52D8DD8224A5B0CB00589E24 /* MainRouter.swift */,
+				52D8DD8324A5B0CB00589E24 /* MainProtocols.swift */,
+				52D8DD8424A5B0CB00589E24 /* MainInteractor.swift */,
+				52D8DD8524A5B0CB00589E24 /* MainView.swift */,
+				52D8DD8624A5B0CB00589E24 /* MainModel.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		52DC8EFD24A3050E006E9B6B = {
@@ -124,6 +185,7 @@
 		52DC8F0824A3050E006E9B6B /* DotaPocket */ = {
 			isa = PBXGroup;
 			children = (
+				52D8D24724A3B7AD00589E24 /* Model */,
 				52389BB124A31CD90007A75F /* Resources */,
 				52DC8F3F24A31C87006E9B6B /* Networking */,
 				52DC8F2C24A30526006E9B6B /* Modules */,
@@ -144,6 +206,7 @@
 		52DC8F2B24A30520006E9B6B /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				52D8D23C24A3AA1800589E24 /* Util */,
 				52389BB224A31D080007A75F /* UI */,
 			);
 			path = Common;
@@ -152,6 +215,7 @@
 		52DC8F2C24A30526006E9B6B /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				52D8DD8024A5B0A500589E24 /* Main */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -160,6 +224,8 @@
 			isa = PBXGroup;
 			children = (
 				52DC8F4124A31CA6006E9B6B /* NetworkError.swift */,
+				52D8D24324A3AF0400589E24 /* NetworkService.swift */,
+				52D8D24524A3B5E500589E24 /* DotaPocketAPI.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -358,9 +424,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52D8D24224A3AD0A00589E24 /* NSAttributedString.swift in Sources */,
+				52D8D25024A3BCDB00589E24 /* HeroStats+CoreDataClass.swift in Sources */,
+				52D8DD8A24A5B0CB00589E24 /* MainProtocols.swift in Sources */,
+				52D8D24024A3AC7100589E24 /* TagNode.swift in Sources */,
+				52D8D24424A3AF0400589E24 /* NetworkService.swift in Sources */,
 				52DC8F4224A31CA6006E9B6B /* NetworkError.swift in Sources */,
+				52D8DD8924A5B0CB00589E24 /* MainRouter.swift in Sources */,
+				52D8D24C24A3BB2800589E24 /* DotaPocket.xcdatamodeld in Sources */,
+				52D8DD8B24A5B0CB00589E24 /* MainInteractor.swift in Sources */,
+				52D8DD8C24A5B0CB00589E24 /* MainView.swift in Sources */,
+				52D8D24624A3B5E500589E24 /* DotaPocketAPI.swift in Sources */,
+				52D8DD8D24A5B0CB00589E24 /* MainModel.swift in Sources */,
+				52D8DD8824A5B0CB00589E24 /* MainPresenter.swift in Sources */,
 				52389BB424A31D240007A75F /* CardNode.swift in Sources */,
 				52DC8F0A24A3050E006E9B6B /* AppDelegate.swift in Sources */,
+				52D8DD9024A5C74600589E24 /* UINavigationBar.swift in Sources */,
+				52D8D23E24A3AA2100589E24 /* Color.swift in Sources */,
 				52DC8F0C24A3050E006E9B6B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -620,6 +700,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		52D8D24A24A3BB2800589E24 /* DotaPocket.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				52D8D24B24A3BB2800589E24 /* DotaPocket.xcdatamodel */,
+			);
+			currentVersion = 52D8D24B24A3BB2800589E24 /* DotaPocket.xcdatamodel */;
+			path = DotaPocket.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 52DC8EFE24A3050E006E9B6B /* Project object */;
 }
