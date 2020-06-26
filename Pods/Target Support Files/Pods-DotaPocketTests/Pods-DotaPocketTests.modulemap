@@ -1,6 +1,0 @@
-framework module Pods_DotaPocketTests {
-  umbrella header "Pods-DotaPocketTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
