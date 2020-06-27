@@ -9,6 +9,25 @@
 import Foundation
 
 class MainInteractor: MainPresenterToInteractor {
-    weak var presenter: MainInteractorToPresenter?
-        
+  weak var presenter: MainInteractorToPresenter?
+  private var worker: MainWorker?
+  
+  init(worker: MainWorker) {
+    self.worker = worker
+    self.worker?.mainDelegate = self
+  }
+  
+  func getHeroStats() {
+    worker?.fetchHeroStats()
+  }
+}
+
+extension MainInteractor: MainWorkerProtocol {
+  func didSuccessGetHeroStats(response: [HeroStats]) {
+    debugPrint(response)
+  }
+  
+  func didFailedGetHeroStats() {
+    
+  }
 }

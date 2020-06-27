@@ -37,7 +37,7 @@ public class TagNodeCell: ASCellNode {
   }
   public override func didLoad() {
     super.didLoad()
-    self.layer.cornerRadius = 8.0
+    self.layer.cornerRadius = 16.0
     self.layer.borderColor = Color.primaryGrey.cgColor
     self.layer.borderWidth = 1.0
   }

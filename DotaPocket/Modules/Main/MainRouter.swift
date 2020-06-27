@@ -9,19 +9,19 @@
 import AsyncDisplayKit
 
 class MainRouter: MainPresenterToRouter {
+  
+  static func createMainModule() -> UIViewController {
+    let view: ASViewController & MainPresenterToView = MainView()
+    let presenter: MainViewToPresenter & MainInteractorToPresenter = MainPresenter()
+    let interactor: MainPresenterToInteractor = MainInteractor(worker: MainWorker.instance)
+    let router: MainPresenterToRouter = MainRouter()
     
-    static func createMainModule() -> UIViewController {
-        let view: ASViewController & MainPresenterToView = MainView()
-        let presenter: MainViewToPresenter & MainInteractorToPresenter = MainPresenter()
-        let interactor: MainPresenterToInteractor = MainInteractor()
-        let router: MainPresenterToRouter = MainRouter()
-        
-        view.presenter = presenter
-        presenter.view = view
-        presenter.router = router
-        presenter.interactor = interactor
-        interactor.presenter = presenter
-        
-        return view
-    }
+    view.presenter = presenter
+    presenter.view = view
+    presenter.router = router
+    presenter.interactor = interactor
+    interactor.presenter = presenter
+    
+    return view
+  }
 }

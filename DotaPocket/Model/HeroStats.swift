@@ -9,6 +9,8 @@
 import Foundation
 import CoreData
 
+typealias HeroStatsResponse = [HeroStats]
+
 public class HeroStats: NSManagedObject, Codable {
   
   @NSManaged var id: Int
@@ -76,13 +78,17 @@ public class HeroStats: NSManagedObject, Codable {
   }
   
   // MARK: - Decodable
-  required public convenience init(from decoder: Decoder) throws {
-    guard let codingUserInfoKeyManagedObjectContext = CodingUserInfoKey.managedObjectContext,
-      let managedObjectContext = decoder.userInfo[codingUserInfoKeyManagedObjectContext] as? NSManagedObjectContext,
-      let entity = NSEntityDescription.entity(forEntityName: "HeroStats", in: managedObjectContext) else {
-        fatalError("Failed to decode Hero Stats")
-    }
-    self.init(entity: entity, insertInto: managedObjectContext)
+  required convenience public init(from decoder: Decoder) throws {
+    //    guard let codingUserInfoKeyManagedObjectContext = CodingUserInfoKey.managedObjectContext,
+    //      let managedObjectContext = decoder.userInfo[codingUserInfoKeyManagedObjectContext] as? NSManagedObjectContext,
+    //      let entity = NSEntityDescription.entity(forEntityName: "HeroStats", in: managedObjectContext) else {
+    //        fatalError("Failed to decode HeroStats")
+    //    }
+    guard let contextUserInfoKey = CodingUserInfoKey.managedObjectContext else { fatalError("cannot find context key")}
+    guard let managedObjectContext = decoder.userInfo[contextUserInfoKey] as? NSManagedObjectContext else { fatalError("cannot retrieve context")}
+    guard let entity = NSEntityDescription.entity(forEntityName: "HeroStats", in: managedObjectContext) else { fatalError("cannot find entity")}
+    
+    self.init(entity: entity, insertInto: nil)
     let container = try decoder.container(keyedBy: CodingKeys.self)
     self.id = try container.decode(Int.self, forKey: .id)
     self.name = try container.decodeIfPresent(String.self, forKey: .name)
@@ -138,9 +144,16 @@ public class HeroStats: NSManagedObject, Codable {
     case turnRate = "turn_rate"
     case cmEnabled = "cm_enabled"
   }
-
+  
 }
 
 extension CodingUserInfoKey {
   static let managedObjectContext = CodingUserInfoKey(rawValue: "context")
 }
+
+//extension JSONDecoder {
+//  convenience init(context: NSManagedObjectContext) {
+//    self.init()
+//    self.userInfo[.managedObjectContext] = context
+//  }
+//}

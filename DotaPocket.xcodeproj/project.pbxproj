@@ -14,7 +14,7 @@
 		52D8D24424A3AF0400589E24 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8D24324A3AF0400589E24 /* NetworkService.swift */; };
 		52D8D24624A3B5E500589E24 /* DotaPocketAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8D24524A3B5E500589E24 /* DotaPocketAPI.swift */; };
 		52D8D24C24A3BB2800589E24 /* DotaPocket.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52D8D24A24A3BB2800589E24 /* DotaPocket.xcdatamodeld */; };
-		52D8D25024A3BCDB00589E24 /* HeroStats+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8D24F24A3BCDB00589E24 /* HeroStats+CoreDataClass.swift */; };
+		52D8D25024A3BCDB00589E24 /* HeroStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8D24F24A3BCDB00589E24 /* HeroStats.swift */; };
 		52D8DD8824A5B0CB00589E24 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DD8124A5B0CB00589E24 /* MainPresenter.swift */; };
 		52D8DD8924A5B0CB00589E24 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DD8224A5B0CB00589E24 /* MainRouter.swift */; };
 		52D8DD8A24A5B0CB00589E24 /* MainProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DD8324A5B0CB00589E24 /* MainProtocols.swift */; };
@@ -22,6 +22,16 @@
 		52D8DD8C24A5B0CB00589E24 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DD8524A5B0CB00589E24 /* MainView.swift */; };
 		52D8DD8D24A5B0CB00589E24 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DD8624A5B0CB00589E24 /* MainModel.swift */; };
 		52D8DD9024A5C74600589E24 /* UINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DD8F24A5C74600589E24 /* UINavigationBar.swift */; };
+		52D8DD9324A5E77A00589E24 /* MainWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DD9224A5E77A00589E24 /* MainWorker.swift */; };
+		52D8DDD124A70D4B00589E24 /* DetailHeroPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DDCA24A70D4B00589E24 /* DetailHeroPresenter.swift */; };
+		52D8DDD224A70D4B00589E24 /* DetailHeroRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DDCB24A70D4B00589E24 /* DetailHeroRouter.swift */; };
+		52D8DDD324A70D4B00589E24 /* DetailHeroProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DDCC24A70D4B00589E24 /* DetailHeroProtocols.swift */; };
+		52D8DDD424A70D4B00589E24 /* DetailHeroInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DDCD24A70D4B00589E24 /* DetailHeroInteractor.swift */; };
+		52D8DDD524A70D4B00589E24 /* DetailHeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DDCE24A70D4B00589E24 /* DetailHeroView.swift */; };
+		52D8DDD624A70D4B00589E24 /* DetailHeroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DDCF24A70D4B00589E24 /* DetailHeroModel.swift */; };
+		52D8DDDA24A70F3D00589E24 /* HeaderImageNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DDD924A70F3D00589E24 /* HeaderImageNode.swift */; };
+		52D8DDDE24A711E100589E24 /* ContentHeroNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DDDD24A711E100589E24 /* ContentHeroNode.swift */; };
+		52D8DDE024A7169300589E24 /* SimiliarNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DDDF24A7169300589E24 /* SimiliarNode.swift */; };
 		52DC8F0A24A3050E006E9B6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DC8F0924A3050E006E9B6B /* AppDelegate.swift */; };
 		52DC8F0C24A3050E006E9B6B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DC8F0B24A3050E006E9B6B /* SceneDelegate.swift */; };
 		52DC8F1324A30511006E9B6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52DC8F1224A30511006E9B6B /* Assets.xcassets */; };
@@ -50,7 +60,7 @@
 		52D8D24324A3AF0400589E24 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		52D8D24524A3B5E500589E24 /* DotaPocketAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotaPocketAPI.swift; sourceTree = "<group>"; };
 		52D8D24B24A3BB2800589E24 /* DotaPocket.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DotaPocket.xcdatamodel; sourceTree = "<group>"; };
-		52D8D24F24A3BCDB00589E24 /* HeroStats+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HeroStats+CoreDataClass.swift"; sourceTree = "<group>"; };
+		52D8D24F24A3BCDB00589E24 /* HeroStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroStats.swift; sourceTree = "<group>"; };
 		52D8DD8124A5B0CB00589E24 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		52D8DD8224A5B0CB00589E24 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		52D8DD8324A5B0CB00589E24 /* MainProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProtocols.swift; sourceTree = "<group>"; };
@@ -58,6 +68,16 @@
 		52D8DD8524A5B0CB00589E24 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		52D8DD8624A5B0CB00589E24 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 		52D8DD8F24A5C74600589E24 /* UINavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBar.swift; sourceTree = "<group>"; };
+		52D8DD9224A5E77A00589E24 /* MainWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWorker.swift; sourceTree = "<group>"; };
+		52D8DDCA24A70D4B00589E24 /* DetailHeroPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeroPresenter.swift; sourceTree = "<group>"; };
+		52D8DDCB24A70D4B00589E24 /* DetailHeroRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeroRouter.swift; sourceTree = "<group>"; };
+		52D8DDCC24A70D4B00589E24 /* DetailHeroProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeroProtocols.swift; sourceTree = "<group>"; };
+		52D8DDCD24A70D4B00589E24 /* DetailHeroInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeroInteractor.swift; sourceTree = "<group>"; };
+		52D8DDCE24A70D4B00589E24 /* DetailHeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeroView.swift; sourceTree = "<group>"; };
+		52D8DDCF24A70D4B00589E24 /* DetailHeroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeroModel.swift; sourceTree = "<group>"; };
+		52D8DDD924A70F3D00589E24 /* HeaderImageNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderImageNode.swift; sourceTree = "<group>"; };
+		52D8DDDD24A711E100589E24 /* ContentHeroNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentHeroNode.swift; sourceTree = "<group>"; };
+		52D8DDDF24A7169300589E24 /* SimiliarNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimiliarNode.swift; sourceTree = "<group>"; };
 		52DC8F0624A3050E006E9B6B /* DotaPocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DotaPocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52DC8F0924A3050E006E9B6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52DC8F0B24A3050E006E9B6B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,8 +143,7 @@
 		52389BB224A31D080007A75F /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				52389BB324A31D240007A75F /* CardNode.swift */,
-				52D8D23F24A3AC7100589E24 /* TagNode.swift */,
+				52D8DD8F24A5C74600589E24 /* UINavigationBar.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -134,7 +153,6 @@
 			children = (
 				52D8D23D24A3AA2100589E24 /* Color.swift */,
 				52D8D24124A3AD0A00589E24 /* NSAttributedString.swift */,
-				52D8DD8F24A5C74600589E24 /* UINavigationBar.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -142,7 +160,7 @@
 		52D8D24724A3B7AD00589E24 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				52D8D24F24A3BCDB00589E24 /* HeroStats+CoreDataClass.swift */,
+				52D8D24F24A3BCDB00589E24 /* HeroStats.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -150,6 +168,7 @@
 		52D8DD8024A5B0A500589E24 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				52D8DDDB24A7108000589E24 /* Node */,
 				52D8DD8124A5B0CB00589E24 /* MainPresenter.swift */,
 				52D8DD8224A5B0CB00589E24 /* MainRouter.swift */,
 				52D8DD8324A5B0CB00589E24 /* MainProtocols.swift */,
@@ -158,6 +177,47 @@
 				52D8DD8624A5B0CB00589E24 /* MainModel.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		52D8DD9124A5E76E00589E24 /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				52D8DD9224A5E77A00589E24 /* MainWorker.swift */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		52D8DDC924A70D3700589E24 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				52D8DDD824A70F3000589E24 /* Node */,
+				52D8DDCA24A70D4B00589E24 /* DetailHeroPresenter.swift */,
+				52D8DDCB24A70D4B00589E24 /* DetailHeroRouter.swift */,
+				52D8DDCC24A70D4B00589E24 /* DetailHeroProtocols.swift */,
+				52D8DDCD24A70D4B00589E24 /* DetailHeroInteractor.swift */,
+				52D8DDCE24A70D4B00589E24 /* DetailHeroView.swift */,
+				52D8DDCF24A70D4B00589E24 /* DetailHeroModel.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		52D8DDD824A70F3000589E24 /* Node */ = {
+			isa = PBXGroup;
+			children = (
+				52D8DDD924A70F3D00589E24 /* HeaderImageNode.swift */,
+				52D8DDDD24A711E100589E24 /* ContentHeroNode.swift */,
+				52D8DDDF24A7169300589E24 /* SimiliarNode.swift */,
+			);
+			path = Node;
+			sourceTree = "<group>";
+		};
+		52D8DDDB24A7108000589E24 /* Node */ = {
+			isa = PBXGroup;
+			children = (
+				52389BB324A31D240007A75F /* CardNode.swift */,
+				52D8D23F24A3AC7100589E24 /* TagNode.swift */,
+			);
+			path = Node;
 			sourceTree = "<group>";
 		};
 		52DC8EFD24A3050E006E9B6B = {
@@ -215,6 +275,7 @@
 		52DC8F2C24A30526006E9B6B /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				52D8DDC924A70D3700589E24 /* Detail */,
 				52D8DD8024A5B0A500589E24 /* Main */,
 			);
 			path = Modules;
@@ -223,6 +284,7 @@
 		52DC8F3F24A31C87006E9B6B /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				52D8DD9124A5E76E00589E24 /* Worker */,
 				52DC8F4124A31CA6006E9B6B /* NetworkError.swift */,
 				52D8D24324A3AF0400589E24 /* NetworkService.swift */,
 				52D8D24524A3B5E500589E24 /* DotaPocketAPI.swift */,
@@ -425,7 +487,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				52D8D24224A3AD0A00589E24 /* NSAttributedString.swift in Sources */,
-				52D8D25024A3BCDB00589E24 /* HeroStats+CoreDataClass.swift in Sources */,
+				52D8D25024A3BCDB00589E24 /* HeroStats.swift in Sources */,
+				52D8DDD324A70D4B00589E24 /* DetailHeroProtocols.swift in Sources */,
 				52D8DD8A24A5B0CB00589E24 /* MainProtocols.swift in Sources */,
 				52D8D24024A3AC7100589E24 /* TagNode.swift in Sources */,
 				52D8D24424A3AF0400589E24 /* NetworkService.swift in Sources */,
@@ -434,13 +497,22 @@
 				52D8D24C24A3BB2800589E24 /* DotaPocket.xcdatamodeld in Sources */,
 				52D8DD8B24A5B0CB00589E24 /* MainInteractor.swift in Sources */,
 				52D8DD8C24A5B0CB00589E24 /* MainView.swift in Sources */,
+				52D8DDD524A70D4B00589E24 /* DetailHeroView.swift in Sources */,
 				52D8D24624A3B5E500589E24 /* DotaPocketAPI.swift in Sources */,
 				52D8DD8D24A5B0CB00589E24 /* MainModel.swift in Sources */,
+				52D8DDD224A70D4B00589E24 /* DetailHeroRouter.swift in Sources */,
 				52D8DD8824A5B0CB00589E24 /* MainPresenter.swift in Sources */,
+				52D8DDDA24A70F3D00589E24 /* HeaderImageNode.swift in Sources */,
+				52D8DDD124A70D4B00589E24 /* DetailHeroPresenter.swift in Sources */,
 				52389BB424A31D240007A75F /* CardNode.swift in Sources */,
+				52D8DDD424A70D4B00589E24 /* DetailHeroInteractor.swift in Sources */,
 				52DC8F0A24A3050E006E9B6B /* AppDelegate.swift in Sources */,
+				52D8DDDE24A711E100589E24 /* ContentHeroNode.swift in Sources */,
+				52D8DD9324A5E77A00589E24 /* MainWorker.swift in Sources */,
 				52D8DD9024A5C74600589E24 /* UINavigationBar.swift in Sources */,
 				52D8D23E24A3AA2100589E24 /* Color.swift in Sources */,
+				52D8DDE024A7169300589E24 /* SimiliarNode.swift in Sources */,
+				52D8DDD624A70D4B00589E24 /* DetailHeroModel.swift in Sources */,
 				52DC8F0C24A3050E006E9B6B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

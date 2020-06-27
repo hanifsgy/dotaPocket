@@ -31,8 +31,27 @@ class MainView: ASViewController<ASDisplayNode> {
   // MARK: - ViewDidLoad
   override func viewDidLoad() {
     super.viewDidLoad()
-    setupCollectionTagNode()
+    presenter?.viewDidLoad()
+//    presenter?.fetchData()
     data = [
+      "asjflajfalsfjalf",
+      "dasdad",
+      "asdasdada",
+      "dasfafadgsgd",
+      "asfas",
+      "asda",
+      "asjflajfalsfjalf",
+      "dasdad",
+      "asdasdada",
+      "dasfafadgsgd",
+      "asfas",
+      "asda",
+      "asjflajfalsfjalf",
+      "dasdad",
+      "asdasdada",
+      "dasfafadgsgd",
+      "asfas",
+      "asda",
       "asjflajfalsfjalf",
       "dasdad",
       "asdasdada",
@@ -66,10 +85,39 @@ class MainView: ASViewController<ASDisplayNode> {
       self.view.addSubnode(tagNode)
     }
   }
+  
+  private func setupCollectionContentNode() {
+    let layout = UICollectionViewFlowLayout()
+    layout.scrollDirection = .vertical
+    layout.minimumInteritemSpacing = 1
+    layout.minimumLineSpacing = 1
+    collectionContentNode = ASCollectionNode(frame: CGRect(x: 0, y: collectionTagNode?.bounds.height ?? 0,
+                                                           width: UIScreen.main.bounds.width,
+                                                           height: UIScreen.main.bounds.height - 64 - (self.navigationController?.navigationBar.frame.height ?? 0.0)),
+                                             collectionViewLayout: layout)
+    collectionContentNode?.showsVerticalScrollIndicator = false
+    collectionContentNode?.contentInset = UIEdgeInsets(top: 16, left: 8.0, bottom: 16, right: 8.0)
+    collectionContentNode?.delegate = self
+    collectionContentNode?.dataSource = self
+    if let contentNode = collectionContentNode {
+      self.view.addSubnode(contentNode)
+    }
+  }
 }
 
 extension MainView: MainPresenterToView {
+  func setupCollectionNode() {
+    setupCollectionTagNode()
+    setupCollectionContentNode()
+  }
   
+  func showLoading() {
+    
+  }
+  
+  func dismissLoading() {
+    
+  }
 }
 
 extension MainView {
@@ -92,7 +140,9 @@ extension MainView {
 }
 
 extension MainView: ASCollectionDelegate {
-  
+  func collectionNode(_ collectionNode: ASCollectionNode, didSelectItemAt indexPath: IndexPath) {
+    print(indexPath)
+  }
 }
 
 extension MainView: ASCollectionDataSource {
@@ -102,8 +152,12 @@ extension MainView: ASCollectionDataSource {
         let name = self.data[indexPath.row]
         let cellNode = TagNodeCell(data: name)
         return cellNode
+      } else if collectionNode == self.collectionContentNode {
+        let heroNode = CardNode()
+        return heroNode
+      } else {
+        return ASCellNode()
       }
-      return ASCellNode()
     }
     return cellNodeBlock
   }

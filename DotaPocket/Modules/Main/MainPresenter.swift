@@ -9,12 +9,19 @@
 import Foundation
 
 class MainPresenter: MainViewToPresenter {
-    weak var view: MainPresenterToView?
-    var interactor: MainPresenterToInteractor?
-    var router: MainPresenterToRouter?
+  weak var view: MainPresenterToView?
+  var interactor: MainPresenterToInteractor?
+  var router: MainPresenterToRouter?
   
+  func viewDidLoad() {
+    view?.setupCollectionNode()
+  }
+  
+  func fetchData() {
+    interactor?.getHeroStats()
+  }
 }
 
 extension MainPresenter: MainInteractorToPresenter {
-    
+  
 }
