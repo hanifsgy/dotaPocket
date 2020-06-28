@@ -15,15 +15,8 @@ public struct DetailHeroModel {
     self.icon = nil
   }
   
+  public static var dummy: DetailHeroModel {
+    return DetailHeroModel()
+  }
 }
 
-public enum PrimaryAttribute: String {
-  case agi
-  case str
-  case int
-}
-
-public enum AttackType: String {
-  case melee = "Melee"
-  case ranged = "Ranged"
-}

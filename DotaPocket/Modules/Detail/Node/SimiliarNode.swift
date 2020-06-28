@@ -15,20 +15,29 @@ class SimiliarNode: ASDisplayNode {
     return text
   }()
   
-  var collectionSimiliar: ASCollectionNode?
+  var collectionSimiliar: ASCollectionNode
   private var data: [String] = []
   
   init(data: [String]) {
-    super.init()
-    self.data = data
-    self.automaticallyManagesSubnodes = true
     let layout = UICollectionViewFlowLayout()
     layout.scrollDirection = .horizontal
     collectionSimiliar = ASCollectionNode(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 170), collectionViewLayout: layout)
-    collectionSimiliar?.showsHorizontalScrollIndicator = false
-    collectionSimiliar?.delegate = self
-    collectionSimiliar?.dataSource = self
+    super.init()
+    self.data = data
+    self.automaticallyManagesSubnodes = true
+    collectionSimiliar.showsHorizontalScrollIndicator = false
+    collectionSimiliar.delegate = self
+    collectionSimiliar.dataSource = self
   }
+  
+//  override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
+//    let stack = ASStackLayoutSpec(direction: .vertical,
+//                                  spacing: 4.0,
+//                                  justifyContent: .start,
+//                                  alignItems: .stretch,
+//                                  children: [similiarText, collectionSimiliar])
+//    return stack
+//  }
 }
 
 extension SimiliarNode: ASCollectionDelegate {

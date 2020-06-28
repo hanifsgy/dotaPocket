@@ -10,9 +10,9 @@ import AsyncDisplayKit
 
 class DetailHeroRouter: DetailHeroPresenterToRouter {
   
-  static func createDetailHeroModule(node: ASDisplayNode, data: DetailHeroModel) -> UIViewController {
-    let view: ASViewController & DetailHeroPresenterToView = DetailHeroView(node: node, data: data)
-    let presenter: DetailHeroViewToPresenter & DetailHeroInteractorToPresenter = DetailHeroPresenter()
+  static func createDetailHeroModule(data: HeroStats) -> UIViewController {
+    let view: ASViewController & DetailHeroPresenterToView = DetailHeroView()
+    let presenter: DetailHeroViewToPresenter & DetailHeroInteractorToPresenter = DetailHeroPresenter(model: data)
     let interactor: DetailHeroPresenterToInteractor = DetailHeroInteractor()
     let router: DetailHeroPresenterToRouter = DetailHeroRouter()
     

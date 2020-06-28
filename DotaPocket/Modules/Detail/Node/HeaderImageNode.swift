@@ -13,12 +13,17 @@ class HeaderImageNode: ASDisplayNode {
   lazy var image: ASNetworkImageNode = {
     let image = ASNetworkImageNode()
     image.placeholderEnabled = true
+    image.clipsToBounds = true
     return image
   }()
   
-  init(urlImage: String) {
+  override init() {
     super.init()
-    image.setURL(URL(string: urlImage), resetToDefault: true)
+    self.automaticallyManagesSubnodes = true
+  }
+  
+  func configure(data: String) {
+    image.setURL(URL(string: "https://api.opendota.com" + data), resetToDefault: true)
   }
   
   override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {

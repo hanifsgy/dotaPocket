@@ -25,7 +25,7 @@ protocol MainPresenterToInteractor: class {
 
 protocol MainPresenterToRouter: class {
   static func createMainModule() -> UIViewController
-  
+  func routeToDetail(model: HeroStats, view: MainPresenterToView?)
 }
 
 protocol MainViewToPresenter: class {
@@ -37,6 +37,7 @@ protocol MainViewToPresenter: class {
   func fetchData()
   func getItems() -> [HeroStats]
   func getTags() -> [String]
+  func didSelectHero(model: HeroStats)
 }
 
 protocol MainInteractorToPresenter: class {

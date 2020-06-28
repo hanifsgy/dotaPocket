@@ -24,4 +24,11 @@ class MainRouter: MainPresenterToRouter {
     
     return view
   }
+  
+  func routeToDetail(model: HeroStats, view: MainPresenterToView?) {
+    if let view = view as? UIViewController {
+      let detailHero = DetailHeroRouter.createDetailHeroModule(data: model)
+      view.navigationController?.pushViewController(detailHero, animated: true)
+    }
+  }
 }

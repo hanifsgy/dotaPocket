@@ -216,6 +216,37 @@ public struct HeroStats: Codable {
     case turnRate = "turn_rate"
     case cmEnabled = "cm_enabled"
   }
+  
+  public static var dummy: HeroStats {
+    return HeroStats(id: 1,
+                     name: nil,
+                     localizedName: nil,
+                     primaryAttr: nil,
+                     attackType: nil,
+                     roles: nil,
+                     img: nil,
+                     icon: nil,
+                     baseHealth: 1,
+                     baseHealthRegen: nil,
+                     baseMana: 1,
+                     baseManaRegen: nil,
+                     baseArmor: nil,
+                     baseMr: 1,
+                     baseAttackMin: 1,
+                     baseAttackMax: 1,
+                     baseStr: 1,
+                     baseAgi: 1,
+                     baseInt: 1,
+                     strGain: nil,
+                     agiGain: nil,
+                     intGain: nil,
+                     attackRange: 1,
+                     projectileSpeed: 1,
+                     attackRate: nil,
+                     moveSpeed: 1,
+                     turnRate: nil,
+                     cmEnabled: false)
+  }
 }
 
 public enum HeroRoles: String, CaseIterable {
@@ -231,4 +262,26 @@ public enum HeroRoles: String, CaseIterable {
   static var item: [String] {
     return HeroRoles.allCases.map { $0.rawValue }
   }
+}
+
+public enum PrimaryAttribute: String {
+  case agi
+  case str
+  case int
+  
+  var image: String {
+    switch self {
+    case .agi:
+      return "rocket"
+    case .str:
+      return "strong"
+    case .int:
+      return "protest"
+    }
+  }
+}
+
+public enum AttackType: String {
+  case melee = "Melee"
+  case ranged = "Ranged"
 }

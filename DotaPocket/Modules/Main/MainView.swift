@@ -126,7 +126,9 @@ extension MainView {
 
 extension MainView: ASCollectionDelegate {
   func collectionNode(_ collectionNode: ASCollectionNode, didSelectItemAt indexPath: IndexPath) {
-    print(indexPath)
+    if collectionNode == collectionContentNode {
+      presenter?.didSelectHero(model: self.heroStats[indexPath.item])
+    }
   }
 }
 

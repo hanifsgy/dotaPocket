@@ -12,9 +12,15 @@ class DetailHeroPresenter: DetailHeroViewToPresenter {
   weak var view: DetailHeroPresenterToView?
   var interactor: DetailHeroPresenterToInteractor?
   var router: DetailHeroPresenterToRouter?
+  private var model: HeroStats!
+  
+  init(model: HeroStats) {
+    self.model = model
+    debugPrint("Detail hero: \(model)")
+  }
   
   func viewDidLoad() {
-    view?.setupView()
+    view?.setupView(model: model)
   }
 }
 

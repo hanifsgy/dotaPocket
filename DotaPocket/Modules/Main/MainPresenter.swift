@@ -31,6 +31,10 @@ class MainPresenter: MainViewToPresenter {
     rolesTag.insert("All", at: 0)
     return rolesTag
   }
+  
+  func didSelectHero(model: HeroStats) {
+    router?.routeToDetail(model: model, view: view)
+  }
 }
 
 extension MainPresenter: MainInteractorToPresenter {

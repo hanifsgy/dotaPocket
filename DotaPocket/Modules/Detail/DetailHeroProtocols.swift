@@ -11,7 +11,7 @@ import AsyncDisplayKit
 protocol DetailHeroPresenterToView: class {
   var presenter: DetailHeroViewToPresenter? { get set }
   
-  func setupView()
+  func setupView(model: HeroStats)
 }
 
 protocol DetailHeroPresenterToInteractor: class {
@@ -20,7 +20,7 @@ protocol DetailHeroPresenterToInteractor: class {
 }
 
 protocol DetailHeroPresenterToRouter: class {
-  static func createDetailHeroModule(node: ASDisplayNode, data: DetailHeroModel) -> UIViewController
+  static func createDetailHeroModule(data: HeroStats) -> UIViewController
   
 }
 
