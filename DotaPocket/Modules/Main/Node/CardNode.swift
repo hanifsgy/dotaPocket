@@ -23,16 +23,20 @@ public class CardNode: ASCellNode {
     image.clipsToBounds = true
     image.style.flexGrow = 1.0
     image.placeholderColor = Color.placeholderColor
+    image.contentMode = .scaleAspectFill
     return image
   }()
   private var model: HeroStats?
   // MARK: - Init
-  override init() {
-//    self.model = model
+  init(model: HeroStats) {
+    self.model = model
     super.init()
     self.selectionStyle = .none
     self.automaticallyManagesSubnodes = true
-    backgroundColor = UIColor.black
+    if let image = model.img {
+      heroImage.setURL(URL(string: "https://api.opendota.com" + image), resetToDefault: true)
+    }
+    heroName.attributedText = NSAttributedString.semiBold(model.localizedName ?? "", size: 14.0, color: UIColor.white)
   }
   
   public override func didLoad() {
@@ -50,6 +54,10 @@ public class CardNode: ASCellNode {
                               bottom: 8.0,
                               right: 4.0)
     let textInsetSpec = ASInsetLayoutSpec(insets: insets, child: heroName)
-    return ASOverlayLayoutSpec(child: heroImage, overlay: textInsetSpec)
+    let overlayBlack = ASDisplayNode()
+    overlayBlack.backgroundColor = Color.primaryBlack.withAlphaComponent(0.5)
+    overlayBlack.style.preferredSize = CGSize(width: heroDimension, height: 24)
+    let overlaySpecHero = ASOverlayLayoutSpec(child: heroImage, overlay: overlayBlack)
+    return ASOverlayLayoutSpec(child: overlaySpecHero, overlay: textInsetSpec)
   }
 }

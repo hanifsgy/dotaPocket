@@ -46,7 +46,7 @@ public class TagNodeCell: ASCellNode {
     let center = ASCenterLayoutSpec(centeringOptions: .XY, sizingOptions: .minimumXY, child: tagText)
     center.style.flexShrink = 1.0
     center.style.flexGrow = 1.0
-    let inset = ASInsetLayoutSpec(insets: UIEdgeInsets(top: 0, left: 4, bottom: 0, right: 4), child: center)
+    let inset = ASInsetLayoutSpec(insets: UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16), child: center)
     return inset
   }
   // MARK: - Selected

@@ -12,6 +12,7 @@ class MainPresenter: MainViewToPresenter {
   weak var view: MainPresenterToView?
   var interactor: MainPresenterToInteractor?
   var router: MainPresenterToRouter?
+  private var items: [HeroStats] = []
   
   func viewDidLoad() {
     view?.setupCollectionNode()
@@ -20,8 +21,25 @@ class MainPresenter: MainViewToPresenter {
   func fetchData() {
     interactor?.getHeroStats()
   }
+  
+  func getItems() -> [HeroStats] {
+    return self.items
+  }
+  
+  func getTags() -> [String] {
+    var rolesTag: [String] = HeroRoles.item
+    rolesTag.insert("All", at: 0)
+    return rolesTag
+  }
 }
 
 extension MainPresenter: MainInteractorToPresenter {
+  func getHeroStats(response: [HeroStats]) {
+    self.items = response
+    view?.refreshContentNode(items: response)
+  }
   
+  func failed() {
+    
+  }
 }

@@ -17,7 +17,8 @@ class MainView: ASViewController<ASDisplayNode> {
   private var disposeBag: DisposeBag = DisposeBag()
   var collectionTagNode: ASCollectionNode?
   var collectionContentNode: ASCollectionNode?
-  var data: [String] = []
+  private var tagsData: [String] = []
+  private var heroStats: [HeroStats] = []
   
   override init(node: ASDisplayNode) {
     super.init(node: node)
@@ -32,33 +33,7 @@ class MainView: ASViewController<ASDisplayNode> {
   override func viewDidLoad() {
     super.viewDidLoad()
     presenter?.viewDidLoad()
-//    presenter?.fetchData()
-    data = [
-      "asjflajfalsfjalf",
-      "dasdad",
-      "asdasdada",
-      "dasfafadgsgd",
-      "asfas",
-      "asda",
-      "asjflajfalsfjalf",
-      "dasdad",
-      "asdasdada",
-      "dasfafadgsgd",
-      "asfas",
-      "asda",
-      "asjflajfalsfjalf",
-      "dasdad",
-      "asdasdada",
-      "dasfafadgsgd",
-      "asfas",
-      "asda",
-      "asjflajfalsfjalf",
-      "dasdad",
-      "asdasdada",
-      "dasfafadgsgd",
-      "asfas",
-      "asda"
-    ]
+    presenter?.fetchData()
   }
   // MARK: - ViewDidAppear
   override func viewDidAppear(_ animated: Bool) {
@@ -99,6 +74,7 @@ class MainView: ASViewController<ASDisplayNode> {
     collectionContentNode?.contentInset = UIEdgeInsets(top: 16, left: 8.0, bottom: 16, right: 8.0)
     collectionContentNode?.delegate = self
     collectionContentNode?.dataSource = self
+    collectionContentNode?.leadingScreensForBatching = 2.0
     if let contentNode = collectionContentNode {
       self.view.addSubnode(contentNode)
     }
@@ -106,6 +82,15 @@ class MainView: ASViewController<ASDisplayNode> {
 }
 
 extension MainView: MainPresenterToView {
+  func refreshContentTags(items: [String]) {
+    
+  }
+  
+  func refreshContentNode(items: [HeroStats]) {
+    self.heroStats = items
+    self.collectionContentNode?.reloadData()
+  }
+  
   func setupCollectionNode() {
     setupCollectionTagNode()
     setupCollectionContentNode()
@@ -149,11 +134,12 @@ extension MainView: ASCollectionDataSource {
   func collectionNode(_ collectionNode: ASCollectionNode, nodeBlockForItemAt indexPath: IndexPath) -> ASCellNodeBlock {
     let cellNodeBlock = { () -> ASCellNode in
       if collectionNode == self.collectionTagNode {
-        let name = self.data[indexPath.row]
-        let cellNode = TagNodeCell(data: name)
+        let name = self.presenter?.getTags()[indexPath.row]
+        let cellNode = TagNodeCell(data: name ?? "")
         return cellNode
       } else if collectionNode == self.collectionContentNode {
-        let heroNode = CardNode()
+        let data = self.heroStats[indexPath.row]
+        let heroNode = CardNode(model: data)
         return heroNode
       } else {
         return ASCellNode()
@@ -162,6 +148,10 @@ extension MainView: ASCollectionDataSource {
     return cellNodeBlock
   }
   func collectionNode(_ collectionNode: ASCollectionNode, numberOfItemsInSection section: Int) -> Int {
-    return data.count
+    if collectionNode == collectionContentNode {
+      return self.presenter?.getItems().count ?? 0
+    } else {
+      return self.presenter?.getTags().count ?? 0
+    }
   }
 }

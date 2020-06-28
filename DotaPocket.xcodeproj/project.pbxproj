@@ -20,7 +20,6 @@
 		52D8DD8A24A5B0CB00589E24 /* MainProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DD8324A5B0CB00589E24 /* MainProtocols.swift */; };
 		52D8DD8B24A5B0CB00589E24 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DD8424A5B0CB00589E24 /* MainInteractor.swift */; };
 		52D8DD8C24A5B0CB00589E24 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DD8524A5B0CB00589E24 /* MainView.swift */; };
-		52D8DD8D24A5B0CB00589E24 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DD8624A5B0CB00589E24 /* MainModel.swift */; };
 		52D8DD9024A5C74600589E24 /* UINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DD8F24A5C74600589E24 /* UINavigationBar.swift */; };
 		52D8DD9324A5E77A00589E24 /* MainWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DD9224A5E77A00589E24 /* MainWorker.swift */; };
 		52D8DDD124A70D4B00589E24 /* DetailHeroPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DDCA24A70D4B00589E24 /* DetailHeroPresenter.swift */; };
@@ -66,7 +65,6 @@
 		52D8DD8324A5B0CB00589E24 /* MainProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProtocols.swift; sourceTree = "<group>"; };
 		52D8DD8424A5B0CB00589E24 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
 		52D8DD8524A5B0CB00589E24 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		52D8DD8624A5B0CB00589E24 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 		52D8DD8F24A5C74600589E24 /* UINavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBar.swift; sourceTree = "<group>"; };
 		52D8DD9224A5E77A00589E24 /* MainWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWorker.swift; sourceTree = "<group>"; };
 		52D8DDCA24A70D4B00589E24 /* DetailHeroPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeroPresenter.swift; sourceTree = "<group>"; };
@@ -174,7 +172,6 @@
 				52D8DD8324A5B0CB00589E24 /* MainProtocols.swift */,
 				52D8DD8424A5B0CB00589E24 /* MainInteractor.swift */,
 				52D8DD8524A5B0CB00589E24 /* MainView.swift */,
-				52D8DD8624A5B0CB00589E24 /* MainModel.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -499,7 +496,6 @@
 				52D8DD8C24A5B0CB00589E24 /* MainView.swift in Sources */,
 				52D8DDD524A70D4B00589E24 /* DetailHeroView.swift in Sources */,
 				52D8D24624A3B5E500589E24 /* DotaPocketAPI.swift in Sources */,
-				52D8DD8D24A5B0CB00589E24 /* MainModel.swift in Sources */,
 				52D8DDD224A70D4B00589E24 /* DetailHeroRouter.swift in Sources */,
 				52D8DD8824A5B0CB00589E24 /* MainPresenter.swift in Sources */,
 				52D8DDDA24A70F3D00589E24 /* HeaderImageNode.swift in Sources */,

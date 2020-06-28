@@ -24,10 +24,10 @@ class MainInteractor: MainPresenterToInteractor {
 
 extension MainInteractor: MainWorkerProtocol {
   func didSuccessGetHeroStats(response: [HeroStats]) {
-    debugPrint(response)
+    presenter?.getHeroStats(response: response)
   }
   
   func didFailedGetHeroStats() {
-    
+    presenter?.failed()
   }
 }

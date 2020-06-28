@@ -13,6 +13,8 @@ protocol MainPresenterToView: class {
   func setupCollectionNode()
   func showLoading()
   func dismissLoading()
+  func refreshContentNode(items: [HeroStats])
+  func refreshContentTags(items: [String])
 }
 
 protocol MainPresenterToInteractor: class {
@@ -33,8 +35,11 @@ protocol MainViewToPresenter: class {
   
   func viewDidLoad()
   func fetchData()
+  func getItems() -> [HeroStats]
+  func getTags() -> [String]
 }
 
 protocol MainInteractorToPresenter: class {
-  
+  func getHeroStats(response: [HeroStats])
+  func failed()
 }

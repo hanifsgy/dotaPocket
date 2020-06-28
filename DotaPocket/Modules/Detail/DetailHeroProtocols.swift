@@ -6,49 +6,32 @@
 //  Copyright © 2020 M Hanif Sugiyanto. All rights reserved.
 //
 
-import UIKit
+import AsyncDisplayKit
 
-
-//MARK: View -
 protocol DetailHeroPresenterToView: class {
-    var presenter: DetailHeroViewToPresenter? { get set }
-    /**
-     * Stubs for communication PRESENTER -> VIEW
-     */
+  var presenter: DetailHeroViewToPresenter? { get set }
+  
+  func setupView()
 }
 
-//MARK: Interactor -
 protocol DetailHeroPresenterToInteractor: class {
-    var presenter: DetailHeroInteractorToPresenter?  { get set }
-    
-    /**
-     * Stubs for communication PRESENTER -> INTERACTOR
-     */
+  var presenter: DetailHeroInteractorToPresenter?  { get set }
+
 }
 
-
-//MARK: Router -
 protocol DetailHeroPresenterToRouter: class {
-    static func createDetailHeroModule() -> UIViewController
-    /**
-     * Stubs for communication PRESENTER -> ROUTER
-     */
+  static func createDetailHeroModule(node: ASDisplayNode, data: DetailHeroModel) -> UIViewController
+  
 }
 
-//MARK: Presenter -
 protocol DetailHeroViewToPresenter: class {
-    var view: DetailHeroPresenterToView? {get set}
-    var interactor: DetailHeroPresenterToInteractor? {get set}
-    var router: DetailHeroPresenterToRouter? {get set}
-    
-    /**
-     * Stubs for communication VIEW -> PRESENTER
-     */
+  var view: DetailHeroPresenterToView? {get set}
+  var interactor: DetailHeroPresenterToInteractor? {get set}
+  var router: DetailHeroPresenterToRouter? {get set}
+  
+  func viewDidLoad()
 }
 
 protocol DetailHeroInteractorToPresenter: class {
-    
-    /**
-     * Stubs for communication INTERACTOR -> PRESENTER
-     */
+  
 }

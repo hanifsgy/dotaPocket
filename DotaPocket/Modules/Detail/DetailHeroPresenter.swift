@@ -9,12 +9,15 @@
 import Foundation
 
 class DetailHeroPresenter: DetailHeroViewToPresenter {
-    weak var view: DetailHeroPresenterToView?
-    var interactor: DetailHeroPresenterToInteractor?
-    var router: DetailHeroPresenterToRouter?
+  weak var view: DetailHeroPresenterToView?
+  var interactor: DetailHeroPresenterToInteractor?
+  var router: DetailHeroPresenterToRouter?
   
+  func viewDidLoad() {
+    view?.setupView()
+  }
 }
 
 extension DetailHeroPresenter: DetailHeroInteractorToPresenter {
-    
+  
 }
