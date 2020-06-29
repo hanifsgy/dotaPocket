@@ -30,7 +30,9 @@ class ContentNode: ASCollectionNode {
   
   func config(data: [HeroStats]) {
     self.data = data
-    self.reloadData()
+    DispatchQueue.main.async {
+      self.reloadData()
+    }
   }
 }
 
@@ -54,7 +56,6 @@ extension ContentNode: ASCollectionDataSource, ASCollectionDelegate {
   
   func collectionNode(_ collectionNode: ASCollectionNode, didSelectItemAt indexPath: IndexPath) {
     let hero = data[indexPath.row]
-    print("hero: \(hero)")
     presenter?.didSelectHero(model: hero)
   }
 }

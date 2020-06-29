@@ -13,14 +13,16 @@ class DetailHeroPresenter: DetailHeroViewToPresenter {
   var interactor: DetailHeroPresenterToInteractor?
   var router: DetailHeroPresenterToRouter?
   private var model: HeroStats!
+  private var similiar: [HeroStats] = []
   
-  init(model: HeroStats) {
+  init(model: HeroStats, similiar: [HeroStats]) {
     self.model = model
-    debugPrint("Detail hero: \(model)")
+    self.similiar = similiar
   }
   
   func viewDidLoad() {
-    view?.setupView(model: model)
+    let bestThreeHeroes = Array(similiar.prefix(3))
+    view?.setupView(model: model, similiarHeroes: bestThreeHeroes)
   }
 }
 

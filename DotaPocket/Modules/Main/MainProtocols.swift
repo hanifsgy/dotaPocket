@@ -24,7 +24,7 @@ protocol MainPresenterToInteractor: class {
 
 protocol MainPresenterToRouter: class {
   static func createMainModule() -> UIViewController
-  func routeToDetail(model: HeroStats, view: MainPresenterToView?)
+  func routeToDetail(model: HeroStats, similiar: [HeroStats], view: MainPresenterToView?)
 }
 
 protocol MainViewToPresenter: class {

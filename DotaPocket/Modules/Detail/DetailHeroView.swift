@@ -13,30 +13,36 @@ class DetailHeroView: ASViewController<ASDisplayNode> {
   var header: HeaderImageNode
   var content: ContentHeroNode
   var similiar: SimiliarNode
-
+  lazy var similiarText: ASTextNode = {
+    let text = ASTextNode()
+    text.attributedText = NSAttributedString.bold("Similiar Heroes", size: 32, color: Color.primaryBlack)
+    return text
+  }()
+  
   init() {
     self.header = HeaderImageNode()
     self.content = ContentHeroNode(data: HeroStats.dummy)
-    self.similiar = SimiliarNode(data: ["1","2"])
+    self.similiar = SimiliarNode(data: HeroStats.dummyContent())
     super.init(node: ASDisplayNode())
     self.node.automaticallyManagesSubnodes = true
     self.node.backgroundColor = UIColor.white
     node.layoutSpecBlock = {_,_ in
+      let inset = ASInsetLayoutSpec(insets: UIEdgeInsets(top: 0, left: 16.0, bottom: 0, right: 0), child: self.similiarText)
       let stack = ASStackLayoutSpec(direction: .vertical,
-      spacing: 0.0,
-      justifyContent: .start,
-      alignItems: .stretch,
-      children: [self.header, self.content, self.similiar])
+                                    spacing: 4.0,
+                                    justifyContent: .start,
+                                    alignItems: .stretch,
+                                    children: [self.header, self.content, inset, self.similiar])
       stack.style.flexGrow = 1.0
       stack.style.flexShrink = 1.0
       return stack
     }
   }
-
+  
   required init?(coder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
-
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     presenter?.viewDidLoad()
@@ -48,8 +54,9 @@ class DetailHeroView: ASViewController<ASDisplayNode> {
 }
 
 extension DetailHeroView: DetailHeroPresenterToView {
-  func setupView(model: HeroStats) {
+  func setupView(model: HeroStats, similiarHeroes: [HeroStats]) {
     header.configure(data: model.img ?? "")
     content = ContentHeroNode(data: model)
+    similiar.config(data: similiarHeroes)
   }
 }

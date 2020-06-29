@@ -219,7 +219,7 @@ public struct HeroStats: Codable {
   
   public static var dummy: HeroStats {
     return HeroStats(id: 1,
-                     name: nil,
+                     name: "DUMMY",
                      localizedName: nil,
                      primaryAttr: nil,
                      attackType: nil,

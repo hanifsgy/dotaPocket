@@ -28,7 +28,9 @@ class TagContentNode: ASCollectionNode {
   
   func config(data: [String]) {
     self.data = data
-    self.reloadData()
+    DispatchQueue.main.async {
+      self.reloadData()
+    }
   }
 }
 
