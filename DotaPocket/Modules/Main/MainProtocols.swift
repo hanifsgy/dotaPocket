@@ -10,7 +10,6 @@ import UIKit
 
 protocol MainPresenterToView: class {
   var presenter: MainViewToPresenter? { get set }
-  func setupCollectionNode()
   func showLoading()
   func dismissLoading()
   func refreshContentNode(items: [HeroStats])

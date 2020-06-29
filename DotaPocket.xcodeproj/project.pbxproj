@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		522FCF6224AA0A7D00EA68BE /* ContentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522FCF6124AA0A7D00EA68BE /* ContentNode.swift */; };
+		522FCF6424AA0BA700EA68BE /* TagContentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522FCF6324AA0BA600EA68BE /* TagContentNode.swift */; };
 		52389BB424A31D240007A75F /* CardNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52389BB324A31D240007A75F /* CardNode.swift */; };
 		52D8D23E24A3AA2100589E24 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8D23D24A3AA2100589E24 /* Color.swift */; };
 		52D8D24024A3AC7100589E24 /* TagNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8D23F24A3AC7100589E24 /* TagNode.swift */; };
@@ -27,7 +29,6 @@
 		52D8DDD324A70D4B00589E24 /* DetailHeroProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DDCC24A70D4B00589E24 /* DetailHeroProtocols.swift */; };
 		52D8DDD424A70D4B00589E24 /* DetailHeroInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DDCD24A70D4B00589E24 /* DetailHeroInteractor.swift */; };
 		52D8DDD524A70D4B00589E24 /* DetailHeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DDCE24A70D4B00589E24 /* DetailHeroView.swift */; };
-		52D8DDD624A70D4B00589E24 /* DetailHeroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DDCF24A70D4B00589E24 /* DetailHeroModel.swift */; };
 		52D8DDDA24A70F3D00589E24 /* HeaderImageNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DDD924A70F3D00589E24 /* HeaderImageNode.swift */; };
 		52D8DDDE24A711E100589E24 /* ContentHeroNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DDDD24A711E100589E24 /* ContentHeroNode.swift */; };
 		52D8DDE024A7169300589E24 /* SimiliarNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DDDF24A7169300589E24 /* SimiliarNode.swift */; };
@@ -35,7 +36,6 @@
 		52DC8F0C24A3050E006E9B6B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DC8F0B24A3050E006E9B6B /* SceneDelegate.swift */; };
 		52DC8F1324A30511006E9B6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52DC8F1224A30511006E9B6B /* Assets.xcassets */; };
 		52DC8F1624A30511006E9B6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52DC8F1424A30511006E9B6B /* LaunchScreen.storyboard */; };
-		52DC8F2124A30512006E9B6B /* DotaPocketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DC8F2024A30512006E9B6B /* DotaPocketTests.swift */; };
 		52DC8F4224A31CA6006E9B6B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DC8F4124A31CA6006E9B6B /* NetworkError.swift */; };
 		59712EAE460AFA3F52B4F916 /* Pods_DotaPocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 879E230CD0C829F36B3FFC31 /* Pods_DotaPocket.framework */; };
 		EBAF363AB1A4865F4BC1BAF3 /* Pods_DotaPocketTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80EAD5D5C437249EF8904A36 /* Pods_DotaPocketTests.framework */; };
@@ -52,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		522FCF6124AA0A7D00EA68BE /* ContentNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentNode.swift; sourceTree = "<group>"; };
+		522FCF6324AA0BA600EA68BE /* TagContentNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagContentNode.swift; sourceTree = "<group>"; };
 		52389BB324A31D240007A75F /* CardNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardNode.swift; sourceTree = "<group>"; };
 		52D8D23D24A3AA2100589E24 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		52D8D23F24A3AC7100589E24 /* TagNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagNode.swift; sourceTree = "<group>"; };
@@ -72,7 +74,6 @@
 		52D8DDCC24A70D4B00589E24 /* DetailHeroProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeroProtocols.swift; sourceTree = "<group>"; };
 		52D8DDCD24A70D4B00589E24 /* DetailHeroInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeroInteractor.swift; sourceTree = "<group>"; };
 		52D8DDCE24A70D4B00589E24 /* DetailHeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeroView.swift; sourceTree = "<group>"; };
-		52D8DDCF24A70D4B00589E24 /* DetailHeroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeroModel.swift; sourceTree = "<group>"; };
 		52D8DDD924A70F3D00589E24 /* HeaderImageNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderImageNode.swift; sourceTree = "<group>"; };
 		52D8DDDD24A711E100589E24 /* ContentHeroNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentHeroNode.swift; sourceTree = "<group>"; };
 		52D8DDDF24A7169300589E24 /* SimiliarNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimiliarNode.swift; sourceTree = "<group>"; };
@@ -83,7 +84,6 @@
 		52DC8F1524A30511006E9B6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52DC8F1724A30511006E9B6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52DC8F1C24A30512006E9B6B /* DotaPocketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DotaPocketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		52DC8F2024A30512006E9B6B /* DotaPocketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotaPocketTests.swift; sourceTree = "<group>"; };
 		52DC8F2224A30512006E9B6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52DC8F4124A31CA6006E9B6B /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		80EAD5D5C437249EF8904A36 /* Pods_DotaPocketTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DotaPocketTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,7 +193,6 @@
 				52D8DDCC24A70D4B00589E24 /* DetailHeroProtocols.swift */,
 				52D8DDCD24A70D4B00589E24 /* DetailHeroInteractor.swift */,
 				52D8DDCE24A70D4B00589E24 /* DetailHeroView.swift */,
-				52D8DDCF24A70D4B00589E24 /* DetailHeroModel.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -213,6 +212,8 @@
 			children = (
 				52389BB324A31D240007A75F /* CardNode.swift */,
 				52D8D23F24A3AC7100589E24 /* TagNode.swift */,
+				522FCF6124AA0A7D00EA68BE /* ContentNode.swift */,
+				522FCF6324AA0BA600EA68BE /* TagContentNode.swift */,
 			);
 			path = Node;
 			sourceTree = "<group>";
@@ -254,7 +255,6 @@
 		52DC8F1F24A30512006E9B6B /* DotaPocketTests */ = {
 			isa = PBXGroup;
 			children = (
-				52DC8F2024A30512006E9B6B /* DotaPocketTests.swift */,
 				52DC8F2224A30512006E9B6B /* Info.plist */,
 			);
 			path = DotaPocketTests;
@@ -507,9 +507,10 @@
 				52D8DD9324A5E77A00589E24 /* MainWorker.swift in Sources */,
 				52D8DD9024A5C74600589E24 /* UINavigationBar.swift in Sources */,
 				52D8D23E24A3AA2100589E24 /* Color.swift in Sources */,
+				522FCF6424AA0BA700EA68BE /* TagContentNode.swift in Sources */,
 				52D8DDE024A7169300589E24 /* SimiliarNode.swift in Sources */,
-				52D8DDD624A70D4B00589E24 /* DetailHeroModel.swift in Sources */,
 				52DC8F0C24A3050E006E9B6B /* SceneDelegate.swift in Sources */,
+				522FCF6224AA0A7D00EA68BE /* ContentNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,7 +518,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52DC8F2124A30512006E9B6B /* DotaPocketTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

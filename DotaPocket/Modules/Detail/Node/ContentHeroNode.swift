@@ -91,6 +91,7 @@ class ContentHeroNode: ASDisplayNode {
     [attackIcon, armorIcon, movementIcon,
      healthIcon, manaIcon, primaryAttributeIcon].forEach { (image) in
       image.style.preferredSize = CGSize(width: 21, height: 21)
+      image.contentMode = .center
     }
     [attackText, armorText, movementText,
      healthText, manaText, primaryAttributeText].forEach { (text) in
@@ -118,9 +119,6 @@ class ContentHeroNode: ASDisplayNode {
   }
   // MARK: - Spec Layout
   override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
-    let spacerOne = ASLayoutSpec()
-    spacerOne.style.flexGrow = 1.0
-    spacerOne.style.flexShrink = 1.0
     let stackAttack: ASStackLayoutSpec = ASStackLayoutSpec(direction: .horizontal,
                                                            spacing: 4.0,
                                                            justifyContent: .start,
@@ -154,21 +152,21 @@ class ContentHeroNode: ASDisplayNode {
     let stackOne: ASStackLayoutSpec = ASStackLayoutSpec(direction: .horizontal,
                                                         spacing: 16.0,
                                                         justifyContent: .start,
-                                                        alignItems: .start,
+                                                        alignItems: .stretch,
                                                         children: [stackAttack, stackHealth])
     let stackTwo: ASStackLayoutSpec = ASStackLayoutSpec(direction: .horizontal,
-                                                        spacing: 16.0,
+                                                        spacing: 42.0,
                                                         justifyContent: .start,
                                                         alignItems: .start,
                                                         children: [stackArmor, stackMana])
     let stackThree: ASStackLayoutSpec = ASStackLayoutSpec(direction: .horizontal,
-                                                          spacing: 16.0,
+                                                          spacing: 42.0,
                                                           justifyContent: .start,
                                                           alignItems: .stretch,
                                                           children: [stackMovement, stackAttribute])
     let stackContent: ASStackLayoutSpec = ASStackLayoutSpec(direction: .vertical,
                                                             spacing: 8.0,
-                                                            justifyContent: .start,
+                                                            justifyContent: .center,
                                                             alignItems: .stretch,
                                                             children: [roleText, heroStatsText, stackOne, stackTwo, stackThree])
     return ASInsetLayoutSpec(insets: UIEdgeInsets(top: 16.0,

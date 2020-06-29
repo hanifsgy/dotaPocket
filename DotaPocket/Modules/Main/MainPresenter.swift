@@ -15,7 +15,6 @@ class MainPresenter: MainViewToPresenter {
   private var items: [HeroStats] = []
   
   func viewDidLoad() {
-    view?.setupCollectionNode()
   }
   
   func fetchData() {
@@ -41,6 +40,7 @@ extension MainPresenter: MainInteractorToPresenter {
   func getHeroStats(response: [HeroStats]) {
     self.items = response
     view?.refreshContentNode(items: response)
+    view?.refreshContentTags(items: getTags())
   }
   
   func failed() {

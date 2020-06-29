@@ -247,6 +247,10 @@ public struct HeroStats: Codable {
                      turnRate: nil,
                      cmEnabled: false)
   }
+  
+  public static func dummyContent() -> [HeroStats] {
+    return [dummy]
+  }
 }
 
 public enum HeroRoles: String, CaseIterable {
