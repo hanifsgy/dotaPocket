@@ -32,7 +32,6 @@ protocol MainViewToPresenter: class {
   var interactor: MainPresenterToInteractor? { get set }
   var router: MainPresenterToRouter? { get set }
   
-  func viewDidLoad()
   func fetchData()
   func getItems() -> [HeroStats]
   func getTags() -> [String]

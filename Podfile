@@ -10,7 +10,7 @@ target 'DotaPocket' do
 
   target 'DotaPocketTests' do
     inherit! :search_paths
-    pod 'RxNimble', subspecs: ['RxBlocking', 'RxTest']
+    pod 'Nimble'
     pod 'Quick'
   end
 

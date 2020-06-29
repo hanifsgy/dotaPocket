@@ -15,9 +15,6 @@ class MainPresenter: MainViewToPresenter {
   private var items: [HeroStats] = []
   private var similiarHero: [HeroStats] = []
   
-  func viewDidLoad() {
-  }
-  
   func fetchData() {
     interactor?.getHeroStats()
   }

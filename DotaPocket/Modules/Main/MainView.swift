@@ -40,7 +40,6 @@ class MainView: ASViewController<ASDisplayNode> {
   // MARK: - ViewDidLoad
   override func viewDidLoad() {
     super.viewDidLoad()
-    presenter?.viewDidLoad()
     presenter?.fetchData()
     self.contentNode.presenter = presenter
     self.contentTagNode.presenter = presenter

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		522FCF6224AA0A7D00EA68BE /* ContentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522FCF6124AA0A7D00EA68BE /* ContentNode.swift */; };
 		522FCF6424AA0BA700EA68BE /* TagContentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522FCF6324AA0BA600EA68BE /* TagContentNode.swift */; };
+		522FCF6724AA314E00EA68BE /* MainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522FCF6624AA314E00EA68BE /* MainTests.swift */; };
+		522FCF6A24AA372E00EA68BE /* DetailHeroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522FCF6924AA372D00EA68BE /* DetailHeroTests.swift */; };
 		52389BB424A31D240007A75F /* CardNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52389BB324A31D240007A75F /* CardNode.swift */; };
 		52D8D23E24A3AA2100589E24 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8D23D24A3AA2100589E24 /* Color.swift */; };
 		52D8D24024A3AC7100589E24 /* TagNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8D23F24A3AC7100589E24 /* TagNode.swift */; };
@@ -54,6 +56,9 @@
 /* Begin PBXFileReference section */
 		522FCF6124AA0A7D00EA68BE /* ContentNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentNode.swift; sourceTree = "<group>"; };
 		522FCF6324AA0BA600EA68BE /* TagContentNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagContentNode.swift; sourceTree = "<group>"; };
+		522FCF6624AA314E00EA68BE /* MainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTests.swift; sourceTree = "<group>"; };
+		522FCF6824AA326700EA68BE /* DotaPocketTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DotaPocketTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		522FCF6924AA372D00EA68BE /* DetailHeroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeroTests.swift; sourceTree = "<group>"; };
 		52389BB324A31D240007A75F /* CardNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardNode.swift; sourceTree = "<group>"; };
 		52D8D23D24A3AA2100589E24 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		52D8D23F24A3AC7100589E24 /* TagNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagNode.swift; sourceTree = "<group>"; };
@@ -255,7 +260,10 @@
 		52DC8F1F24A30512006E9B6B /* DotaPocketTests */ = {
 			isa = PBXGroup;
 			children = (
+				522FCF6824AA326700EA68BE /* DotaPocketTests-Bridging-Header.h */,
 				52DC8F2224A30512006E9B6B /* Info.plist */,
+				522FCF6624AA314E00EA68BE /* MainTests.swift */,
+				522FCF6924AA372D00EA68BE /* DetailHeroTests.swift */,
 			);
 			path = DotaPocketTests;
 			sourceTree = "<group>";
@@ -355,6 +363,7 @@
 					};
 					52DC8F1B24A30512006E9B6B = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 						TestTargetID = 52DC8F0524A3050E006E9B6B;
 					};
 				};
@@ -518,6 +527,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				522FCF6A24AA372E00EA68BE /* DetailHeroTests.swift in Sources */,
+				522FCF6724AA314E00EA68BE /* MainTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -699,6 +710,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DotaPocketTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
@@ -709,6 +721,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.DotaPocketTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DotaPocketTests/DotaPocketTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DotaPocket.app/DotaPocket";
@@ -721,6 +735,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DotaPocketTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
@@ -731,6 +746,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.DotaPocketTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DotaPocketTests/DotaPocketTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DotaPocket.app/DotaPocket";
