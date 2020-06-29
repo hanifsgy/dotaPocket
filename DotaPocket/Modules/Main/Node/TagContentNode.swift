@@ -51,4 +51,7 @@ extension TagContentNode: ASCollectionDataSource, ASCollectionDelegate {
     }
     return cellNodeBlock
   }
+  func collectionNode(_ collectionNode: ASCollectionNode, didSelectItemAt indexPath: IndexPath) {
+    presenter?.didSelectTags(data[indexPath.row])
+  }
 }

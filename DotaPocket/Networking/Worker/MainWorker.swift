@@ -25,7 +25,6 @@ public class MainWorker {
   func fetchHeroStats() {
     service.request(DotaPocketAPI.heroStats, c: HeroStatsResponse.self)
       .subscribe(onSuccess: { [weak self] (response) in
-        debugPrint(response)
         self?.mainDelegate?.didSuccessGetHeroStats(response: response)
         }, onError: { [weak self] (error) in
           self?.mainDelegate?.didFailedGetHeroStats()

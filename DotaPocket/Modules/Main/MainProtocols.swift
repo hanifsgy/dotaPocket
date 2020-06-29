@@ -37,6 +37,7 @@ protocol MainViewToPresenter: class {
   func getItems() -> [HeroStats]
   func getTags() -> [String]
   func didSelectHero(model: HeroStats)
+  func didSelectTags(_ data: String)
 }
 
 protocol MainInteractorToPresenter: class {

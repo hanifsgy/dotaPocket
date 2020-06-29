@@ -60,6 +60,22 @@ class MainPresenter: MainViewToPresenter {
     let result = intHeroes.sorted(by: ({ $0.baseMana > $1.baseMana }))
     return result
   }
+  
+  func didSelectTags(_ data: String) {
+    var filteredItems: [HeroStats] = []
+    if data == "All" {
+      view?.refreshContentNode(items: self.items)
+    } else {
+      for hero in self.items {
+        for role in hero.roles ?? [] {
+          if role.range(of: data, options: .caseInsensitive) != nil {
+            filteredItems.append(hero)
+          }
+        }
+      }
+      view?.refreshContentNode(items: filteredItems)
+    }
+  }
 }
 
 extension MainPresenter: MainInteractorToPresenter {
